@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cfcfcf;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b357d;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* PAGE CONTENT */
+.content {
+    padding: 60px;
+    text-align: center;
+    background-color: #373798e9; /* make center less bright */
+    min-height: 100vh;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #20356e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    width: 60%;
+    margin: 30px auto;   /* centers the table */
+    border-collapse: collapse;
+    border: 2px solid white; /* outer border */
+}
+
+th, td {
+    border: 1px solid white; /* visible lines */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.button button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #1e293b;
+    color: white;
+    cursor: pointer;
+}
+
+/* when selected */
+.button button.active {
+    background-color: #3b82f6;
+}
+
+.message-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#messageInput {
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+#messageDisplay {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+}
